@@ -1,7 +1,4 @@
 ---
 - hosts: all
 - import_playbook: ../static-assignments/common-del.yml
-=======
-- hosts: all
-- import_playbook: ../static-assignments/common-del.yml
 
