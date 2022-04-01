@@ -1,7 +1,8 @@
----
-- hosts: dbmysql
-  remote_user: ubuntu
-  become: yes
+--- 
+- 
+  become: true
   become_user: root
-  roles:
-     - mysql
+  hosts: dbmysql
+  remote_user: ubuntu
+  roles: 
+    - mysql
