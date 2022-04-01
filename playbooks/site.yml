@@ -11,7 +11,7 @@
 - name: Webserver assignment
   import_playbook: ../static-assignments/uat-webservers.yml
 
-   hosts: mysql
+  hosts: mysql
 - name: import databse file
   import_playbook: ../static-assignments/db.yml
 
