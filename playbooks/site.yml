@@ -1,27 +1,28 @@
 --- 
-- name: Include dynamic variables
+- 
   hosts: all
-
-- name: import commor file
+  name: "Include dynamic variables"
+- 
   import_playbook: ../static-assignments/common.yml
+  name: "import commor file"
   tags: 
     - always
-
-- name: include env-vars file
-  import_playbook:  ../dynamic-assignments/env-vars.yml
+- 
+  import_playbook: ../dynamic-assignments/env-vars.yml
+  name: "include env-vars file"
   tags: 
     - always
-
--  hosts: webservers
-- name: Webserver assignment
+- 
+  hosts: webservers
+- 
   import_playbook: ../static-assignments/uat-webservers.yml
-
-- hosts: mysql
+  name: "Webserver assignment"
+- 
+  hosts: mysql
   import_playbook: ../static-assignments/db.yml
   name: "import databaser file"
-
-- name: Loadbalancers assignment
+- 
   hosts: lb
   import_playbook: ../static-assignments/loadbalancers.yml
+  name: "Loadbalancers assignment"
   when: load_balancer_is_required
-  
