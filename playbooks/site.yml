@@ -17,12 +17,10 @@
 - 
   import_playbook: ../static-assignments/uat-webservers.yml
   name: "Webserver assignment"
-- 
-  hosts: mysql
-  import_playbook: ../static-assignments/db.yml
+
+- import_playbook: ../static-assignments/db.yml
   name: "import databaser file"
-- 
-  hosts: lb
-  import_playbook: ../static-assignments/loadbalancers.yml
-  name: "Loadbalancers assignment"
-  when: load_balancer_is_required
+ 
+ - name: "Loadbalancers assignment"
+   import_playbook: ../static-assignments/loadbalancers.yml
+    when: load_balancer_is_required
