@@ -1,14 +1,16 @@
 --- 
-- 
+- name: Include dynamic variables
   hosts: all
-- 
+
+- name: import commor file
   import_playbook: ../static-assignments/common.yml
-  include: ../dynamic-assignments/env-vars.yml
-  name: "Include dynamic variables"
   tags: 
     - always
-  tasks: ~
 
+- name: include env-vars file
+  import_playbook:  ../dynamic-assignments/env-vars.yml
+  tags: 
+    - always
 
 -  hosts: webservers
 - name: Webserver assignment
