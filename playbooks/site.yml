@@ -16,9 +16,10 @@
 - name: Webserver assignment
   import_playbook: ../static-assignments/uat-webservers.yml
 
-- name: import databse file
+- 
   hosts: mysql
   import_playbook: ../static-assignments/db.yml
+  name: "import databaser file"
 
 - name: Loadbalancers assignment
   hosts: lb
