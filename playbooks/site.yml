@@ -11,21 +11,13 @@
   import_playbook:  ../dynamic-assignments/env-vars.yml
   tags: 
     - always
-
-
-
--  hosts: webservers
+-
 - name: Webserver assignment
   import_playbook: ../static-assignments/uat-webservers.yml
 
-- 
-  hosts: mysql
-- 
+- name: import databser file
   import_playbook: ../static-assignments/db.yml
-  name: "import databse file"
-- 
-  hosts: lb
-- 
+  
+- name: Loadbalancers assignment\ 
   import_playbook: ../static-assignments/loadbalancers.yml
-  name: "Loadbalancers assignment\""
   when: load_balancer_is_required
