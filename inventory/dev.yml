@@ -10,12 +10,3 @@
 
 [lb]
 172.31.93.3 ansible_ssh_user='ubuntu'
-
-[lb]
-172.31.27.120 ansible_ssh_user='ec2-user' 
-
-[dbmysql]
-172.31.16.78 ansible_ssh_user='ubuntu' 
-
-[webserver]
-172.31.20.209 ansible_ssh_user='ec2-user' 
