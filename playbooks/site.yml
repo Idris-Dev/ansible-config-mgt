@@ -22,5 +22,5 @@
   name: "import databaser file"
  
 - name: "Loadbalancers assignment"
-   import_playbook: ../static-assignments/loadbalancers.yml
+  import_playbook: ../static-assignments/loadbalancers.yml
     when: load_balancer_is_required
