@@ -58,6 +58,9 @@ Hence, variants of include_* must be used. They include:
 ![image](https://user-images.githubusercontent.com/101482368/161337618-3946822a-54d1-4854-93ce-76e27dfa690f.png)
 * When I need to use Apache, I can switch one to true and the other to false.
 * I updated inventory for each enironment and ran the playbook against the environments
+![image](https://user-images.githubusercontent.com/101482368/161412593-a73ee42d-6b82-4050-87ab-c0e145ca767d.png)
+![image](https://user-images.githubusercontent.com/101482368/161412624-d115be7d-604a-4e4d-afd9-96738a87d429.png)
+  Some parts for mysql setup were skipped because they were not needed
  
 
 #######################################################
